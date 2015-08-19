@@ -24,7 +24,7 @@ areas = pd.read_csv("./input/prefecture_locations.csv")
 cpvtr = pd.read_csv("./input/coupon_visit_train.csv", names = ['PURCHASE_FLG','I_DATE','PAGE_SERIAL','REFERRER_hash','VIEW_COUPON_ID_hash','USER_ID_hash','SESSION_ID_hash','PURCHASEID_hash'])
 
 
-#making of the train set
+#making of 
 train = cpdtr,cpltr
 train = train["COUPON_ID_hash","USER_ID_hash",
                   "GENRE_NAME","DISCOUNT_PRICE","PRICE_RATE",
